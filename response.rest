@@ -1,0 +1,100 @@
+###
+POST http://localhost:9696/latihan1api/user
+Content-Type: application/json
+
+{
+    "name": "ribka",
+    "email": "ribka@mail.com",
+    "password": "rk1234",
+    "confPassword": "rk1234",
+    "role": "admin"
+}
+
+###
+DELETE http://localhost:9696/latihan1api/user/1789dc28-2f4e-4ce3-ac08-ee8e530f9999
+
+###
+GET http://localhost:9696/latihan1api/user
+
+
+###
+PATCH http://localhost:9696/latihan1api/user
+Content-Type: application/json
+
+{
+    "name": "dicky",
+    "email": "dicky@mail.com",
+    "password": "",
+    "confPassword": "",
+    "role": "admin"
+}
+
+###
+DELETE http://localhost:9696/latihan1api/user/004af7ae-aa40-4b64-93d7-86a188582470
+
+###
+POST http://localhost:9696/login
+Content-Type: application/json
+
+{
+    "email": "kayla@mail.com",
+    "password": "kayla1234"
+}
+
+###
+POST http://localhost:9696/login
+Content-Type: application/json
+
+{
+    "email": "dicky@mail.com",
+    "password": "1234"
+}
+
+###
+POST http://localhost:9696/login
+Content-Type: application/json
+
+{
+    "email": "nana@mail.com",
+    "password": "n4n40012"
+}
+
+###
+POST http://localhost:9696/login
+Content-Type: application/json
+
+{
+    "email": "jason@mail.com",
+    "password": "json334"
+}
+
+###
+GET http://localhost:9696/me
+
+###
+DELETE http://localhost:9696/logout
+
+
+###
+GET http://localhost:9696/latihan1api/product
+
+###
+POST http://localhost:9696/latihan1api/product
+Content-Type: application/json
+
+{
+    "name": "teh kamomil",
+    "price": 21
+}
+
+### 
+PATCH http://localhost:9696/latihan1api/product/d89b107f-d310-49fa-b206-1e4c763406f7
+Content-Type: application/json
+
+{
+    "name": "long black",
+    "price": 12.50
+}
+
+### 
+DELETE  http://localhost:9696/latihan1api/product/287f779b-529f-4b2d-935d-ea8f56d78d9b
